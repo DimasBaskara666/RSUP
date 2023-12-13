@@ -20834,4 +20834,13 @@ div.tagsinput {
   -webkit-flex-grow: 1;
   flex-grow: 1; }
 
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+  }
 /*# sourceMappingURL=maps/style.css.map */
