@@ -110,6 +110,16 @@
     </nav>
   </header>
 
+  @if(session()->has('message'))
+
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">
+        x
+    </button>
+    {{session()->get('message')}}
+</div>
+@endif
+
   <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg_image_1.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
@@ -172,9 +182,9 @@
   </div> <!-- .bg-light -->
 
   @include('user.doctor')
-  
-  @include('user.latest')
 
+  @include('user.latest')
+  
   @include('user.appointment')
 
   <footer class="page-footer">
