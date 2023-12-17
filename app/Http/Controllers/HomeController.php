@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 use App\Models\Doctor;
-
+use PhpParser\Node\Expr\FuncCall;
 
 class HomeController extends Controller
 {
@@ -77,10 +77,26 @@ class HomeController extends Controller
 
         $data->save();
         
-        return redirect()->back()->with('message','Appointment Request Successfull');
-
-        
+        return redirect()->back()->with('message','Appointment Request Successfull');    
 
    }
-    
+        public function myappointment()
+        {
+            if(Auth::id())
+            {
+                $userid=Auth::user()->id;
+                $appoint=appointment::where('user_id',$userid)->get();
+                return view('user.my_appointment',compact('appoint'));
+            }
+            else
+            {
+                return redirect()->back();
+            }
+        }
+        public function cancel_appoint($id)
+        {
+            $data=appointment::find($id);
+            $data->delete();
+            return redirect()->back();
+        }
 }
