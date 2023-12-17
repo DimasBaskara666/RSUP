@@ -115,21 +115,21 @@
   </header>
 
     <div align="center" style="padding: 70px;">
-        <table>
-            <tr style="background-color: black;">
-                <th style="padding: 10px; font-size: 20px; color: white;">Doctor Name</th>
-                <th style="padding: 10px; font-size: 20px; color: white;">Date</th>
-                <th style="padding: 10px; font-size: 20px; color: white;">Message</th>
-                <th style="padding: 10px; font-size: 20px; color: white;">Status</th>
+        <table class="table">
+            <tr>
+                <th style="padding: 10px; font-size: 20px;">Doctor Name</th>
+                <th style="padding: 10px; font-size: 20px;">Date</th>
+                <th style="padding: 10px; font-size: 20px;">Message</th>
+                <th style="padding: 10px; font-size: 20px;">Status</th>
 
-                <th style="padding: 10px; font-size: 20px; color: white;">Cancel Appointment</th>
+                <th style="padding: 10px; font-size: 20px;">Cancel Appointment</th>
             </tr>
             @foreach($appoint as $appoints)
-            <tr style="background-color: black;" align="center">
-                <td style="padding: 10px; color: white;">{{$appoints->doctor}}</td>
-                <td style="padding: 10px; color: white;">{{$appoints->date}}</td>
-                <td style="padding: 10px; color: white;">{{$appoints->message}}</td>
-                <td style="padding: 10px; color: white;">{{$appoints->status}}</td>
+            <tr>
+                <td style="padding: 10px;">{{$appoints->doctor}}</td>
+                <td style="padding: 10px;">{{$appoints->date}}</td>
+                <td style="padding: 10px;">{{$appoints->message}}</td>
+                <td style="padding: 10px;">{{$appoints->status}}</td>
 
                 <td><a class="bt btn-danger" onclick="return confirm('Are you sure delete this')" href="{{url('cancel_appoint', $appoints->id)}}">Cancel</a></td>
             @endforeach
