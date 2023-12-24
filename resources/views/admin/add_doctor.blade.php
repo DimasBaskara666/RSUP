@@ -23,7 +23,7 @@
         <div class="container-fluid page-body-wrapper">
 
 
-            <div class="container" align="center" style="padding-top: 100px;">
+            <div class="container" style="padding-top: 20px; color: #6C7293;">
 
                 @if(session()->has('message'))
 
