@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health - Medical Center HTML5 Template</title>
+  <title>Ethereal Care</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -31,26 +31,26 @@
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <a href="https://wa.me/089656057754" target="_blank"><span class="mai-call text-primary"></span> +62 896 5605 7754</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+              <a href="mailto:dimasbratakusumah666@gmail.com"><span class="mai-mail text-primary"></span> etherealcare@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
-            <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-            </div>
+          <div class="social-mini-button">
+            <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+            <a href="https://twitter.com/baskaraakadimas" target="_blank"><span class="mai-logo-twitter"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-dribbble"></span></a>
+            <a href="https://www.instagram.com/dimasbaskara18/" target="_blank"><span class="mai-logo-instagram"></span></a>
           </div>
+        </div>
         </div> <!-- .row -->
       </div> <!-- .container -->
     </div> <!-- .topbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+        <a class="navbar-brand" href="#"><span class="text-primary">Ethereal</span>-Care</a>
 
         <form action="#">
           <div class="input-group input-navbar">
@@ -68,19 +68,19 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="https://www.instagram.com/itenas.official/" target="_blank">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <a class="nav-link" href="#">Doctors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
+              <a class="nav-link" href="https://www.nbcnews.com/" target="_blank">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="https://wa.me/089656057754" target="_blank">Contact</a>
             </li>
 
             @if(Route::has('login'))
@@ -88,7 +88,7 @@
             @auth
 
             <li class="nav-item">
-              <a class="nav-link" style="background-color: greenyellow; color: white;" href="{{url('myappointment')}}">My Appointment</a>
+              <a class="btn btn-primary"  href="{{url('myappointment')}}">My Appointment</a>
             </li>
             
             <x-app-layout>
@@ -128,8 +128,7 @@
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
         <span class="subhead">Let's make your life happier</span>
-        <h1 class="display-4">Healthy Living</h1>
-        <a href="#" class="btn btn-primary">Let's Consult</a>
+        <h1 class="display-4">Ethereal Care</h1>
       </div>
     </div>
   </div>
@@ -171,8 +170,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
-            <h1>Welcome to Your Health <br> Center</h1>
-            <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
+            <h1>Welcome to Ethereal Care</h1> <br>
+            <p class="text-grey mb-4">Welcome to our Ethereal Care! We are very happy that you have chosen our online health services. Here, we provide easy and fast access to communicate directly with expert doctors. Through the chat feature, you can conveniently ask questions about your health, get medical advice, and plan needed treatment. We also provide a doctor's appointment booking service so you can plan a consultation or examination visit without having to wait long. Our medical team is committed to providing friendly, trustworthy and high-quality service. Thank you for choosing Ethereal Care, and we look forward to helping you achieve optimal health. Happy surfing on Ethereal Care!</p>
             <a href="about.html" class="btn btn-primary">Learn More</a>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
@@ -197,7 +196,7 @@
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Company</h5>
           <ul class="footer-menu">
-            <li><a href="#">About Us</a></li>
+            <li><a href="https://www.instagram.com/itenas.official/" target="_blank">About Us</a></li>
             <li><a href="#">Career</a></li>
             <li><a href="#">Editorial Team</a></li>
             <li><a href="#">Protection</a></li>
@@ -222,9 +221,9 @@
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Contact</h5>
-          <p class="footer-link mt-2">351 Willow Street Franklin, MA 02038</p>
-          <a href="#" class="footer-link">701-573-7582</a>
-          <a href="#" class="footer-link">healthcare@temporary.net</a>
+          <p class="footer-link mt-2">Jl. PH.H. Mustofa No.23 Bandung 40124</p>
+          <a href="https://wa.me/0227272215" target="_blank" class="footer-link">+62 22 7272215</a>
+          <a href="mailto:dimasbratakusumah666@gmail.com" class="footer-link">etherealcare@gmail.com</a>
 
           <h5 class="mt-3">Social Media</h5>
           <div class="footer-sosmed mt-3">

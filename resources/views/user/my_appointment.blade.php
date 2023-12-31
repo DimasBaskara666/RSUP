@@ -31,26 +31,26 @@
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <a href="https://wa.me/089656057754" target="_blank"><span class="mai-call text-primary"></span> +62 896 5605 7754</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+              <a href="mailto:dimasbratakusumah666@gmail.com"><span class="mai-mail text-primary"></span> etherealcare@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
-            <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-            </div>
+          <div class="social-mini-button">
+            <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+            <a href="https://twitter.com/baskaraakadimas" target="_blank"><span class="mai-logo-twitter"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-dribbble"></span></a>
+            <a href="https://www.instagram.com/dimasbaskara18/" target="_blank"><span class="mai-logo-instagram"></span></a>
           </div>
+        </div>
         </div> <!-- .row -->
       </div> <!-- .container -->
     </div> <!-- .topbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+        <a class="navbar-brand" href="#"><span class="text-primary">Ethereal</span>-Care</a>
 
         <form action="#">
           <div class="input-group input-navbar">
@@ -68,19 +68,19 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="https://www.instagram.com/itenas.official/" target="_blank">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <a class="nav-link" href="#">Doctors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
+              <a class="nav-link" href="https://www.nbcnews.com/" target="_blank">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="https://wa.me/089656057754" target="_blank">Contact</a>
             </li>
 
             @if(Route::has('login'))
@@ -88,7 +88,7 @@
             @auth
 
             <li class="nav-item">
-              <a class="nav-link" style="background-color: greenyellow; color: white;" href="{{url('myappointment')}}">My Appointment</a>
+              <a class="btn btn-primary" href="{{url('myappointment')}}">My Appointment</a>
             </li>
             
             <x-app-layout>
