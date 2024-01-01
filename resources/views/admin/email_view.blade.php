@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <base href="/public">
     <style type="text/css">
         label {
             display: inline-block;
@@ -34,36 +34,31 @@
                     {{session()->get('message')}}
                 </div>
                 @endif
-                <form action="{{url('upload_doctor')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{url('sendemail',$data->id)}}" method="POST">
 
                     @csrf
 
                     <div style="padding: 15px;">
-                        <label>Doctor Name</label>
-                        <input type="text" style="color:black;" name="name" placeholder="Write the name">
+                        <label>Greeting</label>
+                        <input type="text" style="color:black;" name="greeting">
                     </div>
                     <div style="padding: 15px;">
-                        <label>Phoner</label>
-                        <input type="number" style="color:black;" name="number" placeholder="Write the number">
+                        <label>Body</label>
+                        <input type="text" style="color:black;" name="body">
                     </div>
                     <div style="padding: 15px;">
-                        <label>Speciality</label>
-                        <select name="speciality" style="color: black; width: 200px;">
-                            <option>--Select--</option>
-                            <option value="skin">Skin</option>
-                            <option value="heart">Heart</option>
-                            <option value="eye">Eye</option>
-                            <option value="nose">Nose</option>
-                        </select>
+                        <label>Action Text</label>
+                        <input type="text" style="color:black;" name="actiontext">
                     </div>
                     <div style="padding: 15px;">
-                        <label>Room No</label>
-                        <input type="text" style="color:black;" name="room" placeholder="Write the room number">
+                        <label>Action Url</label>
+                        <input type="text" style="color:black;" name="actionurl">
                     </div>
                     <div style="padding: 15px;">
-                        <label>Doctor Image</label>
-                        <input type="file" name="file">
+                        <label>End Part</label>
+                        <input type="text" style="color:black;" name="endpart">
                     </div>
+                    
                     <div style="padding: 15px;">
                         <input type="submit" class="btn btn-success">
                     </div>
