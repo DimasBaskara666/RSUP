@@ -74,7 +74,7 @@
               <a class="nav-link" href="https://www.instagram.com/itenas.official/" target="_blank">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Doctors</a>
+              <a class="nav-link" href="scrolldoctor">Doctors</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.nbcnews.com/" target="_blank">News</a>
@@ -241,6 +241,22 @@
       <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All right reserved</p>
     </div>
   </footer>
+
+<script>
+  // Fungsi untuk menangani scroll ke bagian dokter
+  function scrollToDoctors() {
+    var doctorsSection = document.getElementById('doctorsSection');
+    if (doctorsSection) {
+      doctorsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  // Menangani klik pada menu "Doctors"
+  document.querySelector('.nav-link[href="scrolldoctor"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    scrollToDoctors();
+  });
+</script>
 
 <script src="../assets/js/jquery-3.5.1.min.js"></script>
 
