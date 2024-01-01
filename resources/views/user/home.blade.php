@@ -50,7 +50,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">Ethereal</span>-Care</a>
+        <a class="navbar-brand" href="{{'/'}}"><span class="text-primary">Ethereal</span>-Care</a>
 
         <form action="#">
           <div class="input-group input-navbar">
@@ -68,7 +68,7 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/home">Home</a>
+              <a class="nav-link" href="{{'/'}}">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.instagram.com/itenas.official/" target="_blank">About Us</a>
