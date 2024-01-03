@@ -6,7 +6,6 @@
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_sidebar.html -->
-      
       @include('admin.sidebar')
       <!-- partial -->
       @include('admin.navbar')
@@ -26,12 +25,25 @@
                         <th style="padding: 10px;">Send Mail</th>
                     </tr>
                     @foreach($data as $appoint)
-                    <tr align="center">
+                    <tr>
                         <td>{{$appoint->name}}</td>
                         <td>{{$appoint->phone}}</td>
                         <td>{{$appoint->doctor}}</td>
                         <td>{{$appoint->date}}</td>
-                        <td>{{$appoint->message}}</td>
+                        <td>
+                            <?php
+                                $words = explode(" ", $appoint->message);
+                                $wordCount = count($words);
+                                for ($i = 0; $i < $wordCount; $i++) {
+                                    echo $words[$i];
+                                    if ($i != $wordCount - 1 && ($i + 1) % 5 == 0) {
+                                        echo "<br>";
+                                    } else {
+                                        echo " ";
+                                    }
+                                }
+                            ?>
+                        </td>
                         <td>{{$appoint->status}}</td>
                         <td>
                             <a class="btn btn-success" href="{{url('approved',$appoint->id)}}">Approved</a>
