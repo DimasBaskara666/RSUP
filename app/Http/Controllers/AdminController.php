@@ -129,6 +129,6 @@ class AdminController extends Controller
             'endpart'=>$request->endpart 
         ];
         Notification::send($data,new SendEmailNotification($details));
-        return redirect()->back()->with('message','Email send id successful');
+        return redirect()->back()->with('message','Email send successful');
     }
 }
