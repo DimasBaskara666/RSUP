@@ -12,7 +12,7 @@
               <img height= 250px"  src="doctorimage/{{$doctors->image}}" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
+                <a href="https://wa.me/089656057754" target="_blank"><span class="mai-logo-whatsapp"></span></a>
               </div>
             </div>
             <div class="body">

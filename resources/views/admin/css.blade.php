@@ -4,6 +4,7 @@
     <title>Admin EtherealCare</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="icon" type="image/x-icon" href="admin/assets/RSUP.ico">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->

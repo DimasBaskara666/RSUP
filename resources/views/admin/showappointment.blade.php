@@ -11,7 +11,7 @@
       @include('admin.navbar')
       <!-- partial  style="background-color: #161B6D;"  style="background-color: #11144F;" -->
         <div class="container-fluid page-body-wrapper">
-            <div style="padding-top: 20px">
+            <div style="padding-top: 2rem">
                 <table class="table">
                     <tr>
                         <th style="padding: 10px; font-size: 15px;">Customer nama</th>
@@ -46,7 +46,7 @@
                         </td>
                         <td>{{$appoint->status}}</td>
                         <td>
-                            <a class="btn btn-success" href="{{url('approved',$appoint->id)}}">Approved</a>
+                            <a style="color:aliceblue;" class="btn btn-success" href="{{url('approved',$appoint->id)}}">Approved</a>
                         </td>
                         <td>
                             <a class="btn btn-danger" href="{{url('canceled',$appoint->id)}}">Canceled</a>
