@@ -31,6 +31,7 @@ class AdminController extends Controller
         }
     }
 
+    // Untuk Mengupload Data
     public function upload(Request $request)
     {
         $doctor=new doctor;
@@ -96,6 +97,7 @@ class AdminController extends Controller
         $data = doctor::find($id);    
         return view('admin.update_doctor',compact('data'));
     }
+    //Untuk Mengedit data doctor
     public function editdoctor(Request $request, $id)
     {
         $doctor = doctor::find($id);   
